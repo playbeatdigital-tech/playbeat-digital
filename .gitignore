@@ -1,0 +1,7 @@
+replica-skill-repo/
+k4g_homepage_props.json
+scraped_products.json
+products_detailed.json
+bestsellers_pp.json
+__pycache__/
+*.log

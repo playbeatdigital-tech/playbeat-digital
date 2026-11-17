@@ -1,0 +1,15 @@
+feature,area,priority,original,clone,notes
+Browse Bestselling Games,Catalog,must,yes,yes,Live scraped products & prices from K4G
+Category Filtering,Catalog,must,yes,yes,Filter by Games / Subscriptions / Software / Gift Cards
+Live Search,Catalog,must,yes,yes,Instant real-time search with multi-keyword matching
+Multi-Currency Switcher,Pricing,must,yes,yes,USD ($) / EUR (€) / GBP (£) with live price conversions
+Discount Badges & Original Prices,Pricing,must,yes,yes,Calculated discount percentage and crossed retail price
+Product Details Modal,PDP,must,yes,yes,Detailed specs / system requirements / instant activation guide
+PlayBeat VIP Discounts,Loyalty,should,yes,yes,Exclusive VIP pricing toggle simulating K4G VIP Club
+Interactive Cart Drawer,Cart,must,yes,yes,Add / remove / change quantities with animated badge
+Promo Code System,Cart,should,yes,yes,Supports promotional vouchers (e.g. PLAYBEAT10)
+One-Click Instant Checkout,Checkout,must,yes,yes,Simulated payment gateway for Card / PayPal / Crypto
+Instant Digital Key Revealer,Fulfillment,must,yes,yes,Generates and reveals digital game keys with 1-click copy
+3D Three.js Interactive Scene,Visuals,must,no,yes,Enterprise 3D animated particle mesh & holographic key model
+Trustpilot & Guarantee Shield,Trust,must,yes,yes,4.9/5 rating badge and PlayBeat Protection Shield
+Responsive Enterprise Design,UX,must,yes,yes,Cyberpunk / modern enterprise dark theme optimized for all screens
