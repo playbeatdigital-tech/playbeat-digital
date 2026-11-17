@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="no-referrer" />
   <title>PlayBeat.digital | Cheap Game CD Keys, Steam, Origin, PSN, Xbox & Software</title>
-  <meta name="description" content="PlayBeat.digital - Cheap game CD keys for Steam, Origin, PSN, Xbox, Windows licenses & subscriptions. Over 78,000 offers. Compare prices and save up to 90%." />
+  <meta name="description" content="PlayBeat.digital - Global 3D digital keys marketplace for Steam, Origin, PSN, Xbox, Windows licenses & subscriptions. Over 80,000 offers. Compare prices and save up to 90%." />
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f73030'><path d='M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z'/></svg>" />
@@ -14,11 +15,128 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <!-- Three.js CDN for 3D Cyber Ambient Canvas -->
+  <!-- Three.js CDN for 3D Global Cyber Brand Canvas -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* 3D Global Brand Hero Styles */
+    .global-brand-hero {
+      position: relative;
+      min-height: 540px;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(circle at 75% 50%, rgba(121, 40, 202, 0.18) 0%, rgba(10, 12, 22, 0.95) 70%);
+      border-bottom: 1px solid var(--border-color);
+      overflow: hidden;
+    }
+
+    #three-canvas-global-brand {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: auto;
+    }
+
+    .global-brand-content {
+      position: relative;
+      z-index: 2;
+      max-width: 650px;
+      padding: 48px 0;
+      pointer-events: none;
+    }
+
+    .global-brand-content * {
+      pointer-events: auto;
+    }
+
+    .brand-pill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 240, 255, 0.1);
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      color: var(--cyan-accent);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .brand-pill-tag .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--cyan-accent);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--cyan-accent);
+      animation: pulseAnim 1.8s infinite;
+    }
+
+    @keyframes pulseAnim {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+
+    .brand-hero-title {
+      font-size: 3.1rem;
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -1px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .brand-hero-title .gradient-span {
+      background: linear-gradient(135deg, #ffffff 10%, #00f0ff 60%, #7928ca 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-hero-desc {
+      font-size: 1rem;
+      color: var(--text-gray);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .brand-stats-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .brand-stat-box {
+      background: rgba(18, 22, 38, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-stat-val {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--cyan-accent);
+    }
+
+    .brand-stat-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+  </style>
 </head>
 <body>
 
@@ -106,6 +224,48 @@
     </div>
   </nav>
 
+  <!-- ====================================================================
+       3D ANIMATED GLOBAL BRAND HERO SECTION
+       ==================================================================== -->
+  <section class="global-brand-hero">
+    <!-- Three.js Interactive 3D Cyber Earth Canvas -->
+    <div id="three-canvas-global-brand"></div>
+
+    <div class="container">
+      <div class="global-brand-content">
+        <div class="brand-pill-tag">
+          <span class="pulse-dot"></span>
+          Next-Gen Global Digital Key Network
+        </div>
+        <h1 class="brand-hero-title">
+          World-Class Digital Gaming & Software at <span class="gradient-span">PlayBeat.digital</span>
+        </h1>
+        <p class="brand-hero-desc">
+          Instant worldwide cryptographic key delivery. Over 80,000 official activation codes for Steam, Xbox, PlayStation, Windows 11 & digital subscriptions with up to 95% off retail.
+        </p>
+
+        <div class="brand-stats-row">
+          <div class="brand-stat-box">
+            <span class="brand-stat-val">180+</span>
+            <span class="brand-stat-label">Countries Covered</span>
+          </div>
+          <div class="brand-stat-box">
+            <span class="brand-stat-val">0.02s</span>
+            <span class="brand-stat-label">Instant Delivery</span>
+          </div>
+          <div class="brand-stat-box">
+            <span class="brand-stat-val">100%</span>
+            <span class="brand-stat-label">Shield Protection</span>
+          </div>
+          <div class="brand-stat-box">
+            <span class="brand-stat-val">4.9 / 5.0</span>
+            <span class="brand-stat-label">Trust Score</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- MAIN HOMEPAGE CONTENT -->
   <main class="container">
 
@@ -122,10 +282,10 @@
       </div>
 
       <div class="bestsellers-grid-layout">
-        <!-- 4 Bestselling Game Cards -->
+        <!-- 4 Bestselling Game Cards with Local High-Res Posters -->
         <div class="k4g-card" onclick="openProductModal('PB-ELDEN-RING-PC')">
           <div class="k4g-card-thumb">
-            <img src="https://cdn.k4g.com/files/cover/624f94488be373b9e4a3b8364a851f50.jpg" alt="Elden Ring" />
+            <img src="images/eldenring.jpg" onerror="this.src='https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_600x900.jpg'" alt="Elden Ring" />
             <span class="discount-tag">-41%</span>
           </div>
           <div class="k4g-card-body">
@@ -146,7 +306,7 @@
 
         <div class="k4g-card" onclick="openProductModal('PB-CP2077-PL-PC')">
           <div class="k4g-card-thumb">
-            <img src="https://cdn.k4g.com/files/cover/4243b7fa1f2aa6ba1fa4c16aeb11bb0e.jpg" alt="Cyberpunk 2077" />
+            <img src="images/cyberpunk.jpg" onerror="this.src='https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/library_600x900.jpg'" alt="Cyberpunk 2077" />
             <span class="discount-tag">-46%</span>
           </div>
           <div class="k4g-card-body">
@@ -167,7 +327,7 @@
 
         <div class="k4g-card" onclick="openProductModal('PB-BMWUKONG-PC')">
           <div class="k4g-card-thumb">
-            <img src="https://cdn.k4g.com/files/cover/b46fbaef8e3347bdf2b374bb8148b61c.jpg" alt="Black Myth Wukong" />
+            <img src="images/wukong.jpg" onerror="this.src='https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/library_600x900.jpg'" alt="Black Myth Wukong" />
             <span class="discount-tag">-17%</span>
           </div>
           <div class="k4g-card-body">
@@ -186,10 +346,10 @@
           </div>
         </div>
 
-        <div class="k4g-card" onclick="openProductModal('PB-GTA6-XB')">
+        <div class="k4g-card" onclick="openProductModal('PB-GTAV-PC')">
           <div class="k4g-card-thumb">
-            <img src="https://cdn.k4g.com/files/cover/5ffde97535570a5490b987868c86495e.jpg" alt="Grand Theft Auto V" />
-            <span class="discount-tag">-23%</span>
+            <img src="images/gtav.jpg" onerror="this.src='https://cdn.cloudflare.steamstatic.com/steam/apps/271590/library_600x900.jpg'" alt="Grand Theft Auto V" />
+            <span class="discount-tag">-64%</span>
           </div>
           <div class="k4g-card-body">
             <div class="card-platform-row">
@@ -202,13 +362,13 @@
                 <span class="price-from">From</span>
                 <span class="actual-price" data-eur="14.50" data-usd="16.20" data-gbp="12.70">€14.50</span>
               </div>
-              <button class="btn-card-add" onclick="event.stopPropagation(); addToCart('PB-GTA6-XB')">Buy</button>
+              <button class="btn-card-add" onclick="event.stopPropagation(); addToCart('PB-GTAV-PC')">Buy</button>
             </div>
           </div>
         </div>
 
         <!-- 5th Column: Massive GTA VI Pre-Order Feature Card -->
-        <div id="gta-vi" class="gta6-hero-banner" onclick="openProductModal('PB-GTA6-XB')">
+        <div id="gta-vi" class="gta6-hero-banner" style="background: linear-gradient(180deg, rgba(20, 10, 35, 0.4) 0%, rgba(10, 12, 22, 0.95) 100%), url('images/gta6_hero.jpg') center/cover no-repeat;" onclick="openProductModal('PB-GTA6-XB')">
           <div class="gta6-content-wrap">
             <span class="gta6-badge-top">🔥 BIGGEST PRE-ORDER OF 2026</span>
             <h3 class="gta6-title">Grand Theft Auto VI</h3>
@@ -224,7 +384,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- ====================================================================
          SECTION 2: Subscriptions Carousel (Xbox, Tinder, Spotify, Discord)
@@ -304,12 +463,9 @@
   </main>
 
   <!-- ====================================================================
-       SECTION 3: Our Ambassadors (Full Width Strip with 3D Particles)
+       SECTION 3: Our Ambassadors (Streamers with Local Photos)
        ==================================================================== -->
   <section class="ambassadors-section">
-    <!-- Three.js Ambient Particle Canvas -->
-    <div id="three-canvas-ambassadors"></div>
-
     <div class="container ambassadors-container">
       <div class="ambassadors-head">
         <h2 class="ambassadors-title">Our Ambassadors</h2>
@@ -323,7 +479,7 @@
         <div class="ambassador-card featured">
           <span class="ambassador-badge-feat">Featured</span>
           <div class="ambassador-photo-wrap">
-            <img src="https://k4g.com/images/ambassadors/noni.png" alt="Noni" />
+            <img src="images/ambassador_noni.jpg" alt="Noni" />
           </div>
           <h3 class="ambassador-name">Noni</h3>
           <p class="ambassador-quote">"Play more, pay less, do good! PlayBeat is the perfect choice."</p>
@@ -337,7 +493,7 @@
         <!-- 2. Carol / Viking -->
         <div class="ambassador-card">
           <div class="ambassador-photo-wrap" style="border-color: #3b82f6;">
-            <img src="https://k4g.com/images/ambassadors/carol.png" alt="Carol" />
+            <img src="images/ambassador_carol.jpg" alt="Carol" />
           </div>
           <h3 class="ambassador-name">Carol "Viking"</h3>
           <p class="ambassador-quote">"Cheap games, helpful support and animal help included!"</p>
@@ -350,7 +506,7 @@
         <!-- 3. Maria -->
         <div class="ambassador-card">
           <div class="ambassador-photo-wrap" style="border-color: #ec4899;">
-            <img src="https://k4g.com/images/ambassadors/maria.png" alt="Maria" />
+            <img src="images/ambassador_maria.jpg" alt="Maria" />
           </div>
           <h3 class="ambassador-name">Maria</h3>
           <p class="ambassador-quote">"Great gaming platform that gives back to animals in need."</p>
@@ -389,8 +545,8 @@
       <div class="software-grid">
         <!-- Windows 11 Pro -->
         <div class="software-card" onclick="openProductModal('PB-WIN11-PRO')">
-          <div class="software-icon-col">
-            <img src="https://cdn.k4g.com/files/cover/1fc80c102a9009841f3f9f4a0bdfdb3c.jpg" alt="Windows 11" />
+          <div class="software-icon-col" style="background:#0078d4;">
+            <svg style="width:30px;height:30px;fill:#fff;" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
           </div>
           <div class="software-info-col">
             <div class="software-title">Microsoft Windows 11 Professional OEM</div>
@@ -404,8 +560,8 @@
 
         <!-- Office 2024 Pro Plus -->
         <div class="software-card" onclick="openProductModal('PB-OFFICE-2024')">
-          <div class="software-icon-col">
-            <img src="https://cdn.k4g.com/files/cover/85bcf56a7c413ea397bfd620fa7ba27a.jpg" alt="Office 2024" />
+          <div class="software-icon-col" style="background:#d83b01;">
+            <svg style="width:30px;height:30px;fill:#fff;" viewBox="0 0 24 24"><path d="M21.5 2h-19C1.1 2 0 3.1 0 4.5v15C0 20.9 1.1 22 2.5 22h19c1.4 0 2.5-1.1 2.5-2.5v-15c0-1.4-1.1-2.5-2.5-2.5zm-8.25 15h-2.5v-6h2.5v6zm0-8h-2.5V6.5h2.5V9z"/></svg>
           </div>
           <div class="software-info-col">
             <div class="software-title">Microsoft Office 2024 Professional Plus</div>
@@ -419,8 +575,8 @@
 
         <!-- NordVPN 1 Year -->
         <div class="software-card" onclick="openProductModal('PB-NORDVPN-1Y')">
-          <div class="software-icon-col">
-            <img src="https://cdn.k4g.com/files/cover/ec5f6a96e95c1c4f51e0655866160563.jpg" alt="NordVPN" />
+          <div class="software-icon-col" style="background:#4687ff;">
+            <svg style="width:30px;height:30px;fill:#fff;" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 4.5l7 12H5l7-12z"/></svg>
           </div>
           <div class="software-info-col">
             <div class="software-title">NordVPN Basic 10 Devices 1 Year</div>
@@ -434,8 +590,8 @@
 
         <!-- Malwarebytes Premium -->
         <div class="software-card" onclick="openProductModal('PB-MALWARE-1Y')">
-          <div class="software-icon-col">
-            <img src="https://cdn.k4g.com/files/cover/6c6fe6027a92df4f6f8f5ea031bcbb40.jpg" alt="Malwarebytes" />
+          <div class="software-icon-col" style="background:#0055ff;">
+            <svg style="width:30px;height:30px;fill:#fff;" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
           </div>
           <div class="software-info-col">
             <div class="software-title">Malwarebytes Premium Perpetual Lifetime</div>
@@ -450,7 +606,7 @@
         <!-- Avast Premium Security -->
         <div class="software-card" onclick="openProductModal('PB-WIN11-PRO')">
           <div class="software-icon-col" style="background:#ff7800;">
-            <svg style="width:32px;height:32px;fill:#fff;" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <svg style="width:30px;height:30px;fill:#fff;" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
           </div>
           <div class="software-info-col">
             <div class="software-title">Avast Premium Security 1 Year Key</div>
@@ -464,8 +620,8 @@
 
         <!-- Windows 10 Home -->
         <div class="software-card" onclick="openProductModal('PB-WIN11-PRO')">
-          <div class="software-icon-col">
-            <img src="https://cdn.k4g.com/files/cover/1fc80c102a9009841f3f9f4a0bdfdb3c.jpg" alt="Windows 10" />
+          <div class="software-icon-col" style="background:#00a4ef;">
+            <svg style="width:30px;height:30px;fill:#fff;" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
           </div>
           <div class="software-info-col">
             <div class="software-title">Microsoft Windows 10 Home OEM</div>
@@ -493,44 +649,44 @@
 
       <div class="products-row-grid-6">
         <div class="k4g-card" onclick="openProductModal('PB-ELDEN-RING-PC')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/624f94488be373b9e4a3b8364a851f50.jpg" alt="Fragment" /></div>
+          <div class="k4g-card-thumb"><img src="images/eldenring.jpg" alt="Fragment" /></div>
           <div class="k4g-card-body">
             <div class="card-title-text">Fragment: Elden Ring [1/9]</div>
             <div class="card-price-bottom"><span class="actual-price">€2.99</span><button class="btn-card-add">Collect</button></div>
           </div>
         </div>
         <div class="k4g-card" onclick="openProductModal('PB-CP2077-PL-PC')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/4243b7fa1f2aa6ba1fa4c16aeb11bb0e.jpg" alt="Fragment" /></div>
+          <div class="k4g-card-thumb"><img src="images/cyberpunk.jpg" alt="Fragment" /></div>
           <div class="k4g-card-body">
             <div class="card-title-text">Fragment: Cyberpunk [3/9]</div>
             <div class="card-price-bottom"><span class="actual-price">€1.99</span><button class="btn-card-add">Collect</button></div>
           </div>
         </div>
         <div class="k4g-card" onclick="openProductModal('PB-BMWUKONG-PC')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/b46fbaef8e3347bdf2b374bb8148b61c.jpg" alt="Fragment" /></div>
+          <div class="k4g-card-thumb"><img src="images/wukong.jpg" alt="Fragment" /></div>
           <div class="k4g-card-body">
             <div class="card-title-text">Fragment: Black Myth [5/9]</div>
             <div class="card-price-bottom"><span class="actual-price">€3.50</span><button class="btn-card-add">Collect</button></div>
           </div>
         </div>
-        <div class="k4g-card" onclick="openProductModal('PB-GTA6-XB')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/5ffde97535570a5490b987868c86495e.jpg" alt="Fragment" /></div>
+        <div class="k4g-card" onclick="openProductModal('PB-GTAV-PC')">
+          <div class="k4g-card-thumb"><img src="images/gtav.jpg" alt="Fragment" /></div>
           <div class="k4g-card-body">
-            <div class="card-title-text">Fragment: GTA VI [2/9]</div>
-            <div class="card-price-bottom"><span class="actual-price">€4.99</span><button class="btn-card-add">Collect</button></div>
+            <div class="card-title-text">Fragment: GTA V [2/9]</div>
+            <div class="card-price-bottom"><span class="actual-price">€1.99</span><button class="btn-card-add">Collect</button></div>
           </div>
         </div>
-        <div class="k4g-card" onclick="openProductModal('PB-XBOX-GPU1M')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/97268d0bbd97dd9cb0f58021c33f2bdf.jpg" alt="Fragment" /></div>
+        <div class="k4g-card" onclick="openProductModal('PB-RDR2-PC')">
+          <div class="k4g-card-thumb"><img src="images/rdr2.jpg" alt="Fragment" /></div>
           <div class="k4g-card-body">
-            <div class="card-title-text">Fragment: Game Pass [4/9]</div>
-            <div class="card-price-bottom"><span class="actual-price">€1.49</span><button class="btn-card-add">Collect</button></div>
+            <div class="card-title-text">Fragment: Red Dead 2 [4/9]</div>
+            <div class="card-price-bottom"><span class="actual-price">€2.50</span><button class="btn-card-add">Collect</button></div>
           </div>
         </div>
-        <div class="k4g-card" onclick="openProductModal('PB-DISCORD-3M')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/2dbb13fb9d35ee269ff203dc69d4bb42.jpg" alt="Fragment" /></div>
+        <div class="k4g-card" onclick="openProductModal('PB-FALLOUT-PC')">
+          <div class="k4g-card-thumb"><img src="images/fallout.jpg" alt="Fragment" /></div>
           <div class="k4g-card-body">
-            <div class="card-title-text">Fragment: Nitro Pass [8/9]</div>
+            <div class="card-title-text">Fragment: Fallout [8/9]</div>
             <div class="card-price-bottom"><span class="actual-price">€0.99</span><button class="btn-card-add">Collect</button></div>
           </div>
         </div>
@@ -550,17 +706,17 @@
       </div>
 
       <div class="products-row-grid-6">
-        <div class="k4g-card" onclick="openProductModal('PB-DISCORD-3M')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/2dbb13fb9d35ee269ff203dc69d4bb42.jpg" alt="Game" /><span class="discount-tag">-92%</span></div>
+        <div class="k4g-card" onclick="openProductModal('PB-AMONGUS-PC')">
+          <div class="k4g-card-thumb"><img src="images/amongus.jpg" alt="Game" /><span class="discount-tag">-70%</span></div>
           <div class="k4g-card-body">
-            <div class="card-platform-row"><span>PC</span><span style="color:var(--green-badge);">GLOBAL</span></div>
-            <div class="card-title-text">Among Us PC Steam Key</div>
+            <div class="card-platform-row"><span>Steam</span><span style="color:var(--green-badge);">GLOBAL</span></div>
+            <div class="card-title-text">Among Us Official Steam Key</div>
             <div class="card-price-bottom"><span class="actual-price">€1.49</span><button class="btn-card-add">Buy</button></div>
           </div>
         </div>
 
-        <div class="k4g-card" onclick="openProductModal('PB-ROBLOX-200')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/9e6e4f3aa3ba408f60ae662c159239d5.jpg" alt="Game" /><span class="discount-tag">-80%</span></div>
+        <div class="k4g-card" onclick="openProductModal('PB-TERRARIA-PC')">
+          <div class="k4g-card-thumb"><img src="images/terraria.jpg" alt="Game" /><span class="discount-tag">-70%</span></div>
           <div class="k4g-card-body">
             <div class="card-platform-row"><span>Steam</span><span style="color:var(--green-badge);">GLOBAL</span></div>
             <div class="card-title-text">Terraria Official Steam CD Key</div>
@@ -568,26 +724,8 @@
           </div>
         </div>
 
-        <div class="k4g-card" onclick="openProductModal('PB-STEAM-15EUR')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/78a99479b1227ae1c3f25c79ee053592.jpg" alt="Game" /><span class="discount-tag">-85%</span></div>
-          <div class="k4g-card-body">
-            <div class="card-platform-row"><span>Steam</span><span style="color:var(--green-badge);">GLOBAL</span></div>
-            <div class="card-title-text">Left 4 Dead 2 Steam CD Key</div>
-            <div class="card-price-bottom"><span class="actual-price">€1.89</span><button class="btn-card-add">Buy</button></div>
-          </div>
-        </div>
-
-        <div class="k4g-card" onclick="openProductModal('PB-XBOX-GPU1M')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/97268d0bbd97dd9cb0f58021c33f2bdf.jpg" alt="Game" /><span class="discount-tag">-70%</span></div>
-          <div class="k4g-card-body">
-            <div class="card-platform-row"><span>Xbox</span><span style="color:var(--green-badge);">GLOBAL</span></div>
-            <div class="card-title-text">Minecraft Java & Bedrock Edition</div>
-            <div class="card-price-bottom"><span class="actual-price">€2.90</span><button class="btn-card-add">Buy</button></div>
-          </div>
-        </div>
-
-        <div class="k4g-card" onclick="openProductModal('PB-SPOTIFY-1M')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/a798547ca2586a1df0da33299c15858b.jpg" alt="Game" /><span class="discount-tag">-88%</span></div>
+        <div class="k4g-card" onclick="openProductModal('PB-DONTSTARVE-PC')">
+          <div class="k4g-card-thumb"><img src="images/dontstarve.jpg" alt="Game" /><span class="discount-tag">-84%</span></div>
           <div class="k4g-card-body">
             <div class="card-platform-row"><span>Steam</span><span style="color:var(--green-badge);">GLOBAL</span></div>
             <div class="card-title-text">Don't Starve Together Steam Key</div>
@@ -595,12 +733,30 @@
           </div>
         </div>
 
-        <div class="k4g-card" onclick="openProductModal('PB-BINANCE-100')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/039c36d0d297a7e112d78709406bca13.jpg" alt="Game" /><span class="discount-tag">-75%</span></div>
+        <div class="k4g-card" onclick="openProductModal('PB-FALLOUT-PC')">
+          <div class="k4g-card-thumb"><img src="images/fallout.jpg" alt="Game" /><span class="discount-tag">-85%</span></div>
           <div class="k4g-card-body">
             <div class="card-platform-row"><span>PC</span><span style="color:var(--green-badge);">GLOBAL</span></div>
             <div class="card-title-text">Fallout: New Vegas Ultimate Key</div>
             <div class="card-price-bottom"><span class="actual-price">€2.95</span><button class="btn-card-add">Buy</button></div>
+          </div>
+        </div>
+
+        <div class="k4g-card" onclick="openProductModal('PB-GTAV-PC')">
+          <div class="k4g-card-thumb"><img src="images/gtav.jpg" alt="Game" /><span class="discount-tag">-64%</span></div>
+          <div class="k4g-card-body">
+            <div class="card-platform-row"><span>Rockstar</span><span style="color:var(--green-badge);">GLOBAL</span></div>
+            <div class="card-title-text">GTA V Online Premium Key</div>
+            <div class="card-price-bottom"><span class="actual-price">€14.50</span><button class="btn-card-add">Buy</button></div>
+          </div>
+        </div>
+
+        <div class="k4g-card" onclick="openProductModal('PB-RDR2-PC')">
+          <div class="k4g-card-thumb"><img src="images/rdr2.jpg" alt="Game" /><span class="discount-tag">-67%</span></div>
+          <div class="k4g-card-body">
+            <div class="card-platform-row"><span>Rockstar</span><span style="color:var(--green-badge);">GLOBAL</span></div>
+            <div class="card-title-text">Red Dead Redemption 2 Key</div>
+            <div class="card-price-bottom"><span class="actual-price">€19.99</span><button class="btn-card-add">Buy</button></div>
           </div>
         </div>
       </div>
@@ -621,7 +777,7 @@
       <div class="products-row-grid-6">
         <div class="k4g-card" style="background:#16102a; border-color:#8a2be2;" onclick="openProductModal('PB-ELDEN-RING-PC')">
           <div class="k4g-card-thumb" style="display:flex;align-items:center;justify-content:center;background:#241142;">
-            <div style="font-size:2.2rem;">🎁</div>
+            <div style="font-size:2.4rem;">🎁</div>
           </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Aim to Get: 10x Random Steam Key</div>
@@ -631,7 +787,7 @@
 
         <div class="k4g-card" style="background:#16102a; border-color:#8a2be2;" onclick="openProductModal('PB-GTA6-XB')">
           <div class="k4g-card-thumb" style="display:flex;align-items:center;justify-content:center;background:#241142;">
-            <div style="font-size:2.2rem;">💎</div>
+            <div style="font-size:2.4rem;">💎</div>
           </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Aim to Get: VIP AAA Steam Game</div>
@@ -641,7 +797,7 @@
 
         <div class="k4g-card" style="background:#16102a; border-color:#8a2be2;" onclick="openProductModal('PB-CP2077-PL-PC')">
           <div class="k4g-card-thumb" style="display:flex;align-items:center;justify-content:center;background:#241142;">
-            <div style="font-size:2.2rem;">⚡</div>
+            <div style="font-size:2.4rem;">⚡</div>
           </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Aim to Get: Cyber Mystery Box</div>
@@ -651,7 +807,7 @@
 
         <div class="k4g-card" style="background:#16102a; border-color:#8a2be2;" onclick="openProductModal('PB-BMWUKONG-PC')">
           <div class="k4g-card-thumb" style="display:flex;align-items:center;justify-content:center;background:#241142;">
-            <div style="font-size:2.2rem;">🐉</div>
+            <div style="font-size:2.4rem;">🐉</div>
           </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Aim to Get: Mythical RPG Bundle</div>
@@ -659,9 +815,9 @@
           </div>
         </div>
 
-        <div class="k4g-card" style="background:#16102a; border-color:#8a2be2;" onclick="openProductModal('PB-DISCORD-3M')">
+        <div class="k4g-card" style="background:#16102a; border-color:#8a2be2;" onclick="openProductModal('PB-AMONGUS-PC')">
           <div class="k4g-card-thumb" style="display:flex;align-items:center;justify-content:center;background:#241142;">
-            <div style="font-size:2.2rem;">⭐</div>
+            <div style="font-size:2.4rem;">⭐</div>
           </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Aim to Get: 5x Premium Indie Keys</div>
@@ -671,7 +827,7 @@
 
         <div class="k4g-card" style="background:#16102a; border-color:#8a2be2;" onclick="openProductModal('PB-XBOX-GPU1M')">
           <div class="k4g-card-thumb" style="display:flex;align-items:center;justify-content:center;background:#241142;">
-            <div style="font-size:2.2rem;">🎮</div>
+            <div style="font-size:2.4rem;">🎮</div>
           </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Aim to Get: Console Points Card</div>
@@ -685,7 +841,7 @@
          SECTION 8: Charity / CSR Banner ("We stand for Animals in need")
          ==================================================================== -->
     <section class="charity-banner-section">
-      <div class="charity-card-wrap">
+      <div class="charity-card-wrap" style="background: linear-gradient(90deg, rgba(24,13,43,0.95) 0%, rgba(41,18,68,0.92) 50%, rgba(24,13,43,0.95) 100%), url('images/charity_animals.jpg') center/cover no-repeat;">
         <div class="charity-left">
           <h3 class="charity-title">
             <svg style="width:28px;height:28px;fill:var(--red-primary);" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
@@ -712,28 +868,32 @@
         <div class="leaderboard-column">
           <h3 class="leaderboard-title">New & Noticed</h3>
           <div class="leaderboard-item" onclick="openProductModal('PB-GTA6-XB')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/5ffde97535570a5490b987868c86495e.jpg" alt="" />
+            <img class="leaderboard-thumb" src="images/gta6_poster.jpg" alt="" />
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Grand Theft Auto VI Standard Edition</div>
               <div class="leaderboard-item-price actual-price" data-eur="69.16" data-usd="77.76" data-gbp="58.86">€69.16</div>
             </div>
           </div>
           <div class="leaderboard-item" onclick="openProductModal('PB-BMWUKONG-PC')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/b46fbaef8e3347bdf2b374bb8148b61c.jpg" alt="" />
+            <img class="leaderboard-thumb" src="images/wukong.jpg" alt="" />
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Black Myth: Wukong Steam Digital</div>
               <div class="leaderboard-item-price actual-price" data-eur="49.90" data-usd="54.80" data-gbp="43.50">€49.90</div>
             </div>
           </div>
           <div class="leaderboard-item" onclick="openProductModal('PB-OFFICE-2024')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/85bcf56a7c413ea397bfd620fa7ba27a.jpg" alt="" />
+            <div class="leaderboard-thumb" style="background:#d83b01; display:flex; align-items:center; justify-content:center;">
+              <svg style="width:24px;height:24px;fill:#fff;" viewBox="0 0 24 24"><path d="M21.5 2h-19C1.1 2 0 3.1 0 4.5v15C0 20.9 1.1 22 2.5 22h19c1.4 0 2.5-1.1 2.5-2.5v-15c0-1.4-1.1-2.5-2.5-2.5zm-8.25 15h-2.5v-6h2.5v6zm0-8h-2.5V6.5h2.5V9z"/></svg>
+            </div>
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Microsoft Office 2024 Professional</div>
               <div class="leaderboard-item-price actual-price" data-eur="14.80" data-usd="16.25" data-gbp="12.80">€14.80</div>
             </div>
           </div>
           <div class="leaderboard-item" onclick="openProductModal('PB-DISCORD-3M')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/2dbb13fb9d35ee269ff203dc69d4bb42.jpg" alt="" />
+            <div class="leaderboard-thumb" style="background:#5865f2; display:flex; align-items:center; justify-content:center;">
+              <svg style="width:24px;height:24px;fill:#fff;" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028z"/></svg>
+            </div>
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Discord Nitro 3 Months Pass</div>
               <div class="leaderboard-item-price actual-price" data-eur="2.49" data-usd="2.75" data-gbp="2.15">€2.49</div>
@@ -745,28 +905,36 @@
         <div class="leaderboard-column">
           <h3 class="leaderboard-title">Highly Discounted Products</h3>
           <div class="leaderboard-item" onclick="openProductModal('PB-WIN11-PRO')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/1fc80c102a9009841f3f9f4a0bdfdb3c.jpg" alt="" />
+            <div class="leaderboard-thumb" style="background:#0078d4; display:flex; align-items:center; justify-content:center;">
+              <svg style="width:24px;height:24px;fill:#fff;" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+            </div>
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Windows 11 Professional OEM (-96%)</div>
               <div class="leaderboard-item-price actual-price" data-eur="7.45" data-usd="8.20" data-gbp="6.45">€7.45</div>
             </div>
           </div>
           <div class="leaderboard-item" onclick="openProductModal('PB-NORDVPN-1Y')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/ec5f6a96e95c1c4f51e0655866160563.jpg" alt="" />
+            <div class="leaderboard-thumb" style="background:#4687ff; display:flex; align-items:center; justify-content:center;">
+              <svg style="width:24px;height:24px;fill:#fff;" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 4.5l7 12H5l7-12z"/></svg>
+            </div>
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">NordVPN Basic 10 Devices (-76%)</div>
               <div class="leaderboard-item-price actual-price" data-eur="19.99" data-usd="21.99" data-gbp="17.50">€19.99</div>
             </div>
           </div>
           <div class="leaderboard-item" onclick="openProductModal('PB-MALWARE-1Y')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/6c6fe6027a92df4f6f8f5ea031bcbb40.jpg" alt="" />
+            <div class="leaderboard-thumb" style="background:#0055ff; display:flex; align-items:center; justify-content:center;">
+              <svg style="width:24px;height:24px;fill:#fff;" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            </div>
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Malwarebytes Premium Lifetime (-78%)</div>
               <div class="leaderboard-item-price actual-price" data-eur="11.20" data-usd="12.40" data-gbp="9.80">€11.20</div>
             </div>
           </div>
           <div class="leaderboard-item" onclick="openProductModal('PB-TINDER-6M')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/2bba297fa1877b0dfca0693510eefd89.jpg" alt="" />
+            <div class="leaderboard-thumb" style="background:#e09900; display:flex; align-items:center; justify-content:center;">
+              <svg style="width:24px;height:24px;fill:#fff;" viewBox="0 0 24 24"><path d="M11.96 0c.26 0 .5.16.6.4 1.22 3.06 2.94 4.54 4.3 5.48 2.28 1.58 4.14 4.14 4.14 7.62 0 5.8-4.48 10.5-10 10.5S1 19.3 1 13.5C1 8.8 3.92 5.04 7.6 3.36c.3-.14.66-.02.82.26.54.92 1.18 1.8 1.94 2.52.2.18.5.2.72.04.22-.16.32-.44.24-.7C10.74 3.12 11.4.98 11.96 0z"/></svg>
+            </div>
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Tinder Gold 6 Months (-57%)</div>
               <div class="leaderboard-item-price actual-price" data-eur="38.90" data-usd="42.80" data-gbp="33.90">€38.90</div>
@@ -778,31 +946,31 @@
         <div class="leaderboard-column">
           <h3 class="leaderboard-title">Recently Released Games</h3>
           <div class="leaderboard-item" onclick="openProductModal('PB-ELDEN-RING-PC')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/624f94488be373b9e4a3b8364a851f50.jpg" alt="" />
+            <img class="leaderboard-thumb" src="images/eldenring.jpg" alt="" />
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Elden Ring: Shadow of the Erdtree</div>
               <div class="leaderboard-item-price actual-price" data-eur="46.90" data-usd="51.50" data-gbp="40.80">€46.90</div>
             </div>
           </div>
           <div class="leaderboard-item" onclick="openProductModal('PB-CP2077-PL-PC')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/4243b7fa1f2aa6ba1fa4c16aeb11bb0e.jpg" alt="" />
+            <img class="leaderboard-thumb" src="images/cyberpunk.jpg" alt="" />
             <div class="leaderboard-details">
               <div class="leaderboard-item-title">Cyberpunk 2077: Ultimate Edition</div>
               <div class="leaderboard-item-price actual-price" data-eur="32.50" data-usd="35.80" data-gbp="28.40">€32.50</div>
             </div>
           </div>
-          <div class="leaderboard-item" onclick="openProductModal('PB-XBOX-GPU1M')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/97268d0bbd97dd9cb0f58021c33f2bdf.jpg" alt="" />
+          <div class="leaderboard-item" onclick="openProductModal('PB-RDR2-PC')">
+            <img class="leaderboard-thumb" src="images/rdr2.jpg" alt="" />
             <div class="leaderboard-details">
-              <div class="leaderboard-item-title">Xbox Game Pass Ultimate Monthly</div>
-              <div class="leaderboard-item-price actual-price" data-eur="8.95" data-usd="9.85" data-gbp="7.75">€8.95</div>
+              <div class="leaderboard-item-title">Red Dead Redemption 2 Rockstar</div>
+              <div class="leaderboard-item-price actual-price" data-eur="19.99" data-usd="22.50" data-gbp="17.80">€19.99</div>
             </div>
           </div>
-          <div class="leaderboard-item" onclick="openProductModal('PB-ROBLOX-200')">
-            <img class="leaderboard-thumb" src="https://cdn.k4g.com/files/cover/9e6e4f3aa3ba408f60ae662c159239d5.jpg" alt="" />
+          <div class="leaderboard-item" onclick="openProductModal('PB-TERRARIA-PC')">
+            <img class="leaderboard-thumb" src="images/terraria.jpg" alt="" />
             <div class="leaderboard-details">
-              <div class="leaderboard-item-title">Roblox Card 200 Robux Key</div>
-              <div class="leaderboard-item-price actual-price" data-eur="2.29" data-usd="2.50" data-gbp="1.95">€2.29</div>
+              <div class="leaderboard-item-title">Terraria Official Steam CD Key</div>
+              <div class="leaderboard-item-price actual-price" data-eur="2.99" data-usd="3.40" data-gbp="2.60">€2.99</div>
             </div>
           </div>
         </div>
@@ -823,45 +991,51 @@
 
       <div class="products-row-grid-6">
         <div class="k4g-card" onclick="openProductModal('PB-GTA6-XB')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/5ffde97535570a5490b987868c86495e.jpg" alt="" /></div>
+          <div class="k4g-card-thumb"><img src="images/gta6_poster.jpg" alt="" /></div>
           <div class="k4g-card-body">
             <div class="card-title-text">GTA VI Pre-Order</div>
             <div class="card-price-bottom"><span class="actual-price">€69.16</span><button class="btn-card-add">Buy</button></div>
           </div>
         </div>
         <div class="k4g-card" onclick="openProductModal('PB-DISCORD-3M')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/2dbb13fb9d35ee269ff203dc69d4bb42.jpg" alt="" /></div>
+          <div class="k4g-card-thumb" style="background:#5865f2; display:flex; align-items:center; justify-content:center;">
+            <svg style="width:48px;height:48px;fill:#fff;" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028z"/></svg>
+          </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Discord Nitro 3M</div>
             <div class="card-price-bottom"><span class="actual-price">€2.49</span><button class="btn-card-add">Buy</button></div>
           </div>
         </div>
         <div class="k4g-card" onclick="openProductModal('PB-WIN11-PRO')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/1fc80c102a9009841f3f9f4a0bdfdb3c.jpg" alt="" /></div>
+          <div class="k4g-card-thumb" style="background:#0078d4; display:flex; align-items:center; justify-content:center;">
+            <svg style="width:48px;height:48px;fill:#fff;" viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Windows 11 Pro</div>
             <div class="card-price-bottom"><span class="actual-price">€7.45</span><button class="btn-card-add">Buy</button></div>
           </div>
         </div>
         <div class="k4g-card" onclick="openProductModal('PB-OFFICE-2024')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/85bcf56a7c413ea397bfd620fa7ba27a.jpg" alt="" /></div>
+          <div class="k4g-card-thumb" style="background:#d83b01; display:flex; align-items:center; justify-content:center;">
+            <svg style="width:48px;height:48px;fill:#fff;" viewBox="0 0 24 24"><path d="M21.5 2h-19C1.1 2 0 3.1 0 4.5v15C0 20.9 1.1 22 2.5 22h19c1.4 0 2.5-1.1 2.5-2.5v-15c0-1.4-1.1-2.5-2.5-2.5zm-8.25 15h-2.5v-6h2.5v6zm0-8h-2.5V6.5h2.5V9z"/></svg>
+          </div>
           <div class="k4g-card-body">
             <div class="card-title-text">Office 2024 Pro Plus</div>
             <div class="card-price-bottom"><span class="actual-price">€14.80</span><button class="btn-card-add">Buy</button></div>
           </div>
         </div>
         <div class="k4g-card" onclick="openProductModal('PB-ELDEN-RING-PC')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/624f94488be373b9e4a3b8364a851f50.jpg" alt="" /></div>
+          <div class="k4g-card-thumb"><img src="images/eldenring.jpg" alt="" /></div>
           <div class="k4g-card-body">
             <div class="card-title-text">Elden Ring Shadow</div>
             <div class="card-price-bottom"><span class="actual-price">€46.90</span><button class="btn-card-add">Buy</button></div>
           </div>
         </div>
-        <div class="k4g-card" onclick="openProductModal('PB-XBOX-GPU1M')">
-          <div class="k4g-card-thumb"><img src="https://cdn.k4g.com/files/cover/97268d0bbd97dd9cb0f58021c33f2bdf.jpg" alt="" /></div>
+        <div class="k4g-card" onclick="openProductModal('PB-RDR2-PC')">
+          <div class="k4g-card-thumb"><img src="images/rdr2.jpg" alt="" /></div>
           <div class="k4g-card-body">
-            <div class="card-title-text">Xbox Game Pass</div>
-            <div class="card-price-bottom"><span class="actual-price">€8.95</span><button class="btn-card-add">Buy</button></div>
+            <div class="card-title-text">Red Dead 2 Key</div>
+            <div class="card-price-bottom"><span class="actual-price">€19.99</span><button class="btn-card-add">Buy</button></div>
           </div>
         </div>
       </div>

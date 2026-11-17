@@ -5,3 +5,8 @@ products_detailed.json
 bestsellers_pp.json
 __pycache__/
 *.log
+.vercel
+
+update_and_deploy.py
+*.py
+!generate_playbeat_catalog.py
